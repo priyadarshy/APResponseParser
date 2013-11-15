@@ -19,7 +19,7 @@
 		C5613D4F1835B29C0009C959 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5613D371835B29B0009C959 /* UIKit.framework */; };
 		C5613D571835B29C0009C959 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C5613D551835B29C0009C959 /* InfoPlist.strings */; };
 		C5613D591835B29C0009C959 /* APResponseParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5613D581835B29C0009C959 /* APResponseParserTests.m */; };
-		C5613D921835B2ED0009C959 /* RDUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C5613D911835B2ED0009C959 /* RDUtilities.m */; };
+		C5613D921835B2ED0009C959 /* APJSONUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = C5613D911835B2ED0009C959 /* APJSONUtility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +59,8 @@
 		C5613D841835B2BE0009C959 /* APResponseParserDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "APResponseParserDemoTests-Info.plist"; sourceTree = "<group>"; };
 		C5613D861835B2BE0009C959 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C5613D881835B2BE0009C959 /* APResponseParserDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APResponseParserDemoTests.m; sourceTree = "<group>"; };
-		C5613D901835B2ED0009C959 /* RDUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDUtilities.h; sourceTree = "<group>"; };
-		C5613D911835B2ED0009C959 /* RDUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDUtilities.m; sourceTree = "<group>"; };
+		C5613D901835B2ED0009C959 /* APJSONUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APJSONUtility.h; sourceTree = "<group>"; };
+		C5613D911835B2ED0009C959 /* APJSONUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APJSONUtility.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,8 +126,8 @@
 				C5613D431835B29C0009C959 /* APAppDelegate.m */,
 				C5613D451835B29C0009C959 /* Images.xcassets */,
 				C5613D3A1835B29B0009C959 /* Supporting Files */,
-				C5613D901835B2ED0009C959 /* RDUtilities.h */,
-				C5613D911835B2ED0009C959 /* RDUtilities.m */,
+				C5613D901835B2ED0009C959 /* APJSONUtility.h */,
+				C5613D911835B2ED0009C959 /* APJSONUtility.m */,
 			);
 			path = APResponseParser;
 			sourceTree = "<group>";
@@ -297,7 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5613D921835B2ED0009C959 /* RDUtilities.m in Sources */,
+				C5613D921835B2ED0009C959 /* APJSONUtility.m in Sources */,
 				C5613D401835B29C0009C959 /* main.m in Sources */,
 				C5613D441835B29C0009C959 /* APAppDelegate.m in Sources */,
 			);
@@ -518,6 +518,7 @@
 				C5613D5E1835B29C0009C959 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5613D5F1835B29C0009C959 /* Build configuration list for PBXNativeTarget "APResponseParserTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +527,7 @@
 				C5613D611835B29C0009C959 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

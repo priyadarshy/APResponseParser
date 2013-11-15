@@ -1,13 +1,13 @@
 //
 //  APAppDelegate.m
-//  APResponseParser
+//  APJSONUtility
 //
 //  Created by Ashutosh Priyadarshy on 11/14/13.
 //  Copyright (c) 2013 EEMe labs. All rights reserved.
 //
 
 #import "APAppDelegate.h"
-#import "RDUtilities.h"
+#import "APJSONUtility.h"
 
 @implementation APAppDelegate
 
@@ -26,11 +26,9 @@
     NSLog(@"JSON Output: %@", jsonString);
     
     // Try parsing it.
-    NSString *returnValue = [RDUtilities objectFromNestedJSON:jsonData usingCascadedKeys:RDJSONIndex(0), RDJSONKey(@"foo"), RDJSONIndex(1), nil];
+    NSString *returnValue = [APJSONUtility objectFromNestedJSON:jsonData usingCascadedKeys:APJSONIndex(0), APJSONKey(@"foo"), APJSONIndex(1), nil];
                             
     NSLog(@"return Value =  %@", returnValue);
-    
-    
     
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
